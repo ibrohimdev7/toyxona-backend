@@ -73,7 +73,7 @@ const limiter = rateLimit({
 app.use("/api", limiter);
 
 // API documentation route
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocs));
+app.use("/docs", swaggerUI.serve, swaggerUI.setup(swaggerDocs));
 
 // Routes
 app.use("/api/auth", authRoutes);
