@@ -129,7 +129,6 @@ router.post(
   "/",
   protect,
   authorize("owner", "admin"),
-  upload.array("images"), // Frontendda <input type="file" multiple name="images" />
   validateVenue,
   venueController.createVenue
 );
